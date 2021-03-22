@@ -2638,6 +2638,8 @@ public class MetadataService {
     }
     public class StandardValueSetTranslation extends Metadata {
         public String type = 'StandardValueSetTranslation';
+        public String fullName;
+        private String[] fullName_type_info = new String[]{'fullName',SOAP_M_URI,null,'0','1','false'};
         public MetadataService.ValueTranslation[] valueTranslation;
         private String[] valueTranslation_type_info = new String[]{'valueTranslation',SOAP_M_URI,null,'0','-1','false'};
         private String[] apex_schema_type_info = new String[]{SOAP_M_URI,'true','false'};
