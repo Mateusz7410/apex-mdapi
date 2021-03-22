@@ -2636,7 +2636,8 @@ public class MetadataService {
         private String[] apex_schema_type_info = new String[]{SOAP_M_URI,'true','false'};
         private String[] field_order_type_info = new String[]{'cacheData','contextFilterableField','error','hideOnError','includeContext','reportName','showTitle','size'};
     }
-    public class StandardValueSetTranslation {
+    public class StandardValueSetTranslation extends Metadata {
+        public String type = 'StandardValueSetTranslation';
         public MetadataService.ValueTranslation[] valueTranslation;
         private String[] valueTranslation_type_info = new String[]{'valueTranslation',SOAP_M_URI,null,'0','-1','false'};
         private String[] apex_schema_type_info = new String[]{SOAP_M_URI,'true','false'};
@@ -8932,6 +8933,20 @@ public class MetadataService {
     }
     public class readCustomObjectTranslationResponse_element implements IReadResponseElement {
         public MetadataService.ReadCustomObjectTranslationResult result;
+        public IReadResult getResult() { return result; }
+        private String[] result_type_info = new String[]{'result',SOAP_M_URI,null,'1','1','false'};
+        private String[] apex_schema_type_info = new String[]{SOAP_M_URI,'true','false'};
+        private String[] field_order_type_info = new String[]{'result'};
+    }
+    public class ReadStandardValueSetTranslationResult implements IReadResult {
+        public MetadataService.StandardValueSetTranslation[] records;
+        public MetadataService.Metadata[] getRecords() { return records; }
+        private String[] records_type_info = new String[]{'records',SOAP_M_URI,null,'0','-1','false'};
+        private String[] apex_schema_type_info = new String[]{SOAP_M_URI,'true','false'};
+        private String[] field_order_type_info = new String[]{'records'};
+    }
+    public class readStandardValueSetTranslationResponse_element implements IReadResponseElement {
+        public MetadataService.ReadStandardValueSetTranslationResult result;
         public IReadResult getResult() { return result; }
         private String[] result_type_info = new String[]{'result',SOAP_M_URI,null,'1','1','false'};
         private String[] apex_schema_type_info = new String[]{SOAP_M_URI,'true','false'};

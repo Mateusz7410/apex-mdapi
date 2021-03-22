@@ -700,6 +700,8 @@ private class MetadataServiceTest
         new MetadataService.readOrderSettingsResponse_element();
         new MetadataService.ReadCustomObjectTranslationResult();
         new MetadataService.readCustomObjectTranslationResponse_element();
+        new MetadataService.ReadStandardValueSetTranslationResult();
+        new MetadataService.readStandardValueSetTranslationResponse_element();
         new MetadataService.ReadCustomApplicationResult();
         new MetadataService.readCustomApplicationResponse_element();
         new MetadataService.ReadKnowledgeSettingsResult();
@@ -1007,6 +1009,7 @@ private class MetadataServiceTest
         new MetadataService.ReadHomePageComponentResult().getRecords();
         new MetadataService.ReadHomePageLayoutResult().getRecords();
         new MetadataService.ReadCustomObjectTranslationResult().getRecords();
+        new MetadataService.ReadStandardValueSetTranslationResult().getRecords();
         new MetadataService.ReadTranslationsResult().getRecords();
         new MetadataService.ReadProfileResult().getRecords();
         new MetadataService.ReadPermissionSetResult().getRecords();
@@ -1264,6 +1267,7 @@ private class MetadataServiceTest
         new MetadataService.readListViewResponse_element().getResult();
         new MetadataService.readOrderSettingsResponse_element().getResult();
         new MetadataService.readCustomObjectTranslationResponse_element().getResult();
+        new MetadataService.readStandardValueSetTranslationResponse_element().getResult();
         new MetadataService.readCustomApplicationResponse_element().getResult();
         new MetadataService.readKnowledgeSettingsResponse_element().getResult();
         new MetadataService.readCaseSettingsResponse_element().getResult();

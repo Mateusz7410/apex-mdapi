@@ -125,6 +125,7 @@ public with sharing class MetadataServicePatcher {
 			'HomePageComponent' => 'Metadata',
 			'HomePageLayout' => 'Metadata',
 			'CustomObjectTranslation' => 'Metadata',
+			'StandardValueSetTranslation' => 'Metadata',
 			'Translations' => 'Metadata',
 			'Profile' => 'Metadata',
 			'PermissionSet' => 'Metadata',
