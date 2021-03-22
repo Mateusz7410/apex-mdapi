@@ -2643,7 +2643,8 @@ public class MetadataService {
         public MetadataService.ValueTranslation[] valueTranslation;
         private String[] valueTranslation_type_info = new String[]{'valueTranslation',SOAP_M_URI,null,'0','-1','false'};
         private String[] apex_schema_type_info = new String[]{SOAP_M_URI,'true','false'};
-        private String[] field_order_type_info = new String[]{'valueTranslation'};
+        private String[] type_att_info = new String[]{'xsi:type'};
+        private String[] field_order_type_info = new String[]{'fullName', 'valueTranslation'};
     }
     public class BrandingSet extends Metadata {
         public String type = 'BrandingSet';
